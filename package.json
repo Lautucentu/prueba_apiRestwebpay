@@ -1,0 +1,36 @@
+{
+  "name": "proyeto_pago_wepay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "window.js",
+  "scripts": {
+    "start": "electron .",
+    "pack":"build --dir",
+    "dist": "electron-builder"
+  },
+  "author": "lautaro centurion",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "http-proxy-middleware": "3.0.0",
+    "transbank-sdk": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron": "31.2.1",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+
+}
